@@ -1,0 +1,10 @@
+name "default_extensions_does_not_leak"
+
+using_task_library "default_extensions"
+
+task_context "Task" do
+    if respond_to?(:trigger_enabled_twice_bug_method)
+        raise "the trigger_enabled_twice_bug extension is enabled but should not have"
+    end
+end
+

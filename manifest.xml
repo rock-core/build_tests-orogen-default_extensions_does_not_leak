@@ -1,0 +1,7 @@
+<package>
+  <description brief="Verifies that default extensions that were enabled during generation do not leak during import">
+  </description>
+  <depend package="base/cmake" />
+  <depend package="base/orogen/std" />
+  <depend package="build_tests/orogen/default_extensions" />
+</package>
